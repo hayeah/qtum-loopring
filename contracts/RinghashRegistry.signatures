@@ -1,0 +1,6 @@
+24fe96ec: batchSubmitRinghash(address[],bytes32[])
+bfcf73e7: blocksToLive()
+c34b45c9: canSubmit(bytes32,address)
+93d9bf30: computeAndGetRinghashInfo(uint256,address,uint8[],bytes32[],bytes32[])
+a27f4635: isReserved(bytes32,address)
+ae201a70: submitRinghash(address,bytes32)

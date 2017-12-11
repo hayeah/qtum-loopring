@@ -1,0 +1,7 @@
+db71d8b6: FEE_SELECT_LRC()
+e95d716c: FEE_SELECT_MARGIN_SPLIT()
+26ea9268: FEE_SELECT_MAX_VALUE()
+2db237bb: MARGIN_SPLIT_PERCENTAGE_BASE()
+47a99e43: cancelOrder(address[3],uint256[7],bool,uint8,uint8,bytes32,bytes32)
+d7bf9110: setCutoff(uint256)
+ca35947d: submitRing(address[2][],uint256[7][],uint8[2][],bool[],uint8[],bytes32[],bytes32[],address,address)
