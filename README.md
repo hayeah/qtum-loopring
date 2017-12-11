@@ -2,7 +2,7 @@
 Clone repo:
 
 ```
-git clone https://github.com/hayeah/neutrino-react-ts-boilerplate.git my-project
+git clone https://github.com/hayeah/qtum-loopring.git qtum-loopring
 ```
 
 Install dependencies:
