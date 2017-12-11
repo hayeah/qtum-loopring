@@ -257,4 +257,36 @@ REP registered: true
 QTUM registered: true
 ```
 
+# Composing Contracts
+
+A common contract pattern is to compose multiple contracts together by configuring a contract with addresses of other contracts.
+
+The `LoopringProtocolImpl` takes 4 addresses:
+
+```
+function LoopringProtocolImpl(
+  address _lrcTokenAddress,
+  address _tokenRegistryAddress,
+  address _ringhashRegistryAddress,
+  address _delegateAddress,
+  uint    _maxRingSize,
+  uint    _rateRatioCVSThreshold
+)
+```
+
+Instead of passing in the addresses explicitly, `solar` supports using variable syntax to expand contract deploy names to addresses. Like so:
+
+```
+solar deploy contracts/LoopringProtocolImpl.sol '[
+  ${LRCToken},
+  ${contracts/TokenRegistry.sol},
+  ${contracts/RinghashRegistry.sol},
+  ${contracts/TokenTransferDelegate.sol},
+  5,
+  62500
+]'
+```
+
+Note: Be sure to use single-quote instead of double-quote when specifying the JSON array.
+
 Done.
